@@ -1,0 +1,32 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "3b8cb73013b8632ece33339572c470f8"
+name = "landing-cost-app"
+application_url = "https://holder-beatles-tulsa-missions.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "rockyct.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://holder-beatles-tulsa-missions.trycloudflare.com/auth/callback",
+  "https://holder-beatles-tulsa-missions.trycloudflare.com/auth/shopify/callback",
+  "https://holder-beatles-tulsa-missions.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[app_proxy]
+url = "https://holder-beatles-tulsa-missions.trycloudflare.com/dhl"
+subpath = "dhl"
+prefix = "apps"
+
+[pos]
+embedded = false
